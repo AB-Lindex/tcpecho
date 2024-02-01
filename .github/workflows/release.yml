@@ -22,12 +22,12 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-          lindex/melp
+          lindex/tcpecho
         tags: |
           type=semver,pattern=v{{version}}
           type=semver,pattern=v{{major}}.{{minor}}
         labels: |
-          org.opencontainers.image.title=melp
+          org.opencontainers.image.title=tcpecho
           org.opencontainers.image.description=Simple service to test TCP-connections
           org.opencontainers.image.source=https://github.com/AB-Lindex/tcpecho
           org.opencontainers.image.url=https://github.com/AB-Lindex/tcpecho
